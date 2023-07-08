@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    body{
+       height: 96vh;
+       width: 98vw;
+        color: orangered;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container{
+        height: 300px;
+        width: 300px;
+       margin: 200px 0px 0px 40vw;
+        background-image: url(R\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-size: 300px 350px; 
+        border-radius: 10px;
+        
+    }
+    h1{
+        margin-top: 20px;
+    }
+    .keys{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        gap: 80px;
+
+    }
+    i{
+        font-size: 1.7em;
+    }
+    #display{
+        font-size:2em;
+    }
+</style>
+</head>
+<body>
+    <div class="container"> 
+    <h1>Stopwatch</h1>
+    <label id="display">00:00:00</label><br>
+    <label id="lap">0</label>
+    <div class="keys">
+    <i id="play" class="fa-solid fa-circle-play"></i>
+    <i id="pause" class="fa-sharp fa-regular fa-circle-stop"></i> 
+    <i id="reset" class="fa-solid fa-rotate-right"></i>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
